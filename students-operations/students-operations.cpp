@@ -16,7 +16,7 @@ class Student : public Person {
 	// constructor ("nume student", nota)
     int grade;
 public:
-	string getName()
+	string getName() {}
 };
 class Teacher : public Person {
 	// add constructor ("nume profesor", "specialitate")
@@ -51,6 +51,19 @@ public:
 //	// niste studenti
 //	[{"student11", 10}, "Strudent22", 9]);
 //courses.push_back(course2);
+		return vector<Course*>();
+	}
+
+	static void displayTeacherInCourse(string courseName,
+		vector<Course*> courses) {
+		return;
+	}
+
+	// use exceptions
+	static void moveStudentBetweenCourses(string courseName1, 
+		string courseName2, 
+		string studentName, vector<Course*> courses) {
+		return;
 	}
 };
 
@@ -60,4 +73,10 @@ int main()
 		
 	//- Display name and grade for all students in a course given by name
 	CourseHelper::displayStudentsInCourse("Math", courses);
+
+	//- Display name and speciality of a teacher presenting the course
+	CourseHelper::displayTeacherInCourse("Math", courses);
+
+	//- Move a student from a course to another course
+	CourseHelper::moveStudentBetweenCourses("Math", "Math2", "student1", courses);
 }
