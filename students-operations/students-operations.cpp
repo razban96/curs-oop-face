@@ -23,6 +23,13 @@ class Course {
 	vector<Student*> students;
 };
 
+class CourseHelper {
+	static void displayStudentsInCourse(string courseName, 
+		vector<Course> courses) {
+
+	}
+};
+
 int main()
 {
     cout << "Hello World!\n";
