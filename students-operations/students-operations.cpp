@@ -9,12 +9,10 @@ using namespace std;
 class Person {
     string name;
 };
-class Student {
-    string name;
+class Student : public Person {
     int grade;
 };
-class Teacher {
-	string name;
+class Teacher : public Person {
 	string speciality;
 };
 class Course {
