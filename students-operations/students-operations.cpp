@@ -9,18 +9,28 @@ using namespace std;
 #include <iostream>
 
 class Person {
+	// add constructor ("nume persoana") Pay attention !! this is called indirectly
     string name;
 };
 class Student : public Person {
+	// constructor ("nume student", nota)
     int grade;
+public:
+	string getName()
 };
 class Teacher : public Person {
+	// add constructor ("nume profesor", "specialitate")
 	string speciality;
 };
 class Course {
+	// add constructor ("nume curs", Teacher* teacher1, vector<Student*> students)
 	string name;
 	Teacher teacher;
 	vector<Student*> students;
+public:
+	string getName() {
+		return name;
+	}
 };
 
 class CourseHelper {
