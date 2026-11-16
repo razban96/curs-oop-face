@@ -24,13 +24,16 @@ class Course {
 };
 
 class CourseHelper {
+public:
 	static void displayStudentsInCourse(string courseName, 
-		vector<Course> courses) {
+		vector<Course*> courses) {
 
 	}
 };
 
 int main()
 {
-    cout << "Hello World!\n";
+	vector<Course*> courses;
+	//- Display name and grade for all students in a course given by name
+	CourseHelper::displayStudentsInCourse("Math", courses);
 }
